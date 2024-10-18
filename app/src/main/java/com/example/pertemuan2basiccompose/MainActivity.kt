@@ -86,6 +86,15 @@ fun BasicColumn(modifier: Modifier = Modifier){
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold,
             )
+        Spacer(modifier = Modifier.padding(5.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.me),
+            contentDescription = "Foto Saya",
+            modifier = Modifier
+                .clip(CircleShape)
+                .size(300.dp)
+        )
     }
 }
 
