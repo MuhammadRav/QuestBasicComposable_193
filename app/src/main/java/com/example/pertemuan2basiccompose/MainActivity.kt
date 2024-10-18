@@ -81,7 +81,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
         Text("Muhammad Rezza",
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.Green,
+            color = Color.Red,
             )
 
         Text("20220140193",
