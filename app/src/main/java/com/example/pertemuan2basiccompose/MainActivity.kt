@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.focusModifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontStyle
@@ -26,6 +27,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.content.res.ColorStateListInflaterCompat
 import com.example.pertemuan2basiccompose.ui.theme.Pertemuan2BasicComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -70,9 +72,15 @@ fun BasicColumn(modifier: Modifier = Modifier){
         Spacer(modifier = Modifier.padding(5.dp))
 
         Text("Nama",
-            fontSize = 30.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
         )
+
+        Text("Muhammad Rezza",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            color = Color.Red,
+            )
     }
 }
 
