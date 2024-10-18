@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -80,7 +81,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
         Text("Muhammad Rezza",
             fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.Red,
+            color = Color.Green,
             )
 
         Text("20220140193",
@@ -93,7 +94,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.me),
             contentDescription = "Foto Saya",
             modifier = Modifier
-                .clip(RoundedCornerShape(200.dp))
+                .clip(CutCornerShape(200.dp))
         )
     }
 }
