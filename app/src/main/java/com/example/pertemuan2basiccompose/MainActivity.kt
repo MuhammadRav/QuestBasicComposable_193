@@ -74,7 +74,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
         Spacer(modifier = Modifier.padding(5.dp))
 
         Text("Nama",
-            fontSize = 20.sp,
+            fontSize = 25.sp,
             fontWeight = FontWeight.Bold,
         )
 
