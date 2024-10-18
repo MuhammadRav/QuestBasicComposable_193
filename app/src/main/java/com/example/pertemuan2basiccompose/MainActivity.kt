@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -67,7 +68,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
             contentDescription = "Logo",
             modifier = Modifier
                 .clip(CircleShape)
-                .size(300.dp)
+                .size(250.dp)
         )
         Spacer(modifier = Modifier.padding(5.dp))
 
@@ -92,8 +93,7 @@ fun BasicColumn(modifier: Modifier = Modifier){
             painter = painterResource(id = R.drawable.me),
             contentDescription = "Foto Saya",
             modifier = Modifier
-                .clip(CircleShape)
-                .size(300.dp)
+                .clip(RoundedCornerShape(200.dp))
         )
     }
 }
