@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -53,15 +54,25 @@ fun BasicColumn(modifier: Modifier = Modifier){
             fontSize = 50.sp,
             fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.padding(5.dp))
+
         Text("Ini adalah halaman login",
             fontSize = 25.sp,
-            fontStyle = FontStyle.Italic)
-
+            )
         Spacer(modifier = Modifier.padding(20.dp))
+
         Image(
-            painter = painterResource(id = R.drawable.me),
-            contentDescription = "",
-            modifier = Modifier.clip(RectangleShape)
+            painter = painterResource(id = R.drawable.logo),
+            contentDescription = "Logo",
+            modifier = Modifier
+                .clip(CircleShape)
+                .size(300.dp)
+        )
+        Spacer(modifier = Modifier.padding(20.dp))
+
+        Text("Nama",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+
         )
     }
 }
